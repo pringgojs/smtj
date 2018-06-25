@@ -29,40 +29,40 @@
                     acceptedFiles: ".jpeg, .jpg, .png, .gif",
                     success: function(file, response){
                         alert(file.name);
+                    }
             };</script>
              
   <!-- tinyMCE -->
   <script src="<?php echo base_url() ?>asset/js/tinymce/tinymce.min.js"></script>
   <script>tinymce.init({ 
           selector:'#berita',
-           height: 1000,
-           
-            plugins: [
-              'advlist autolink lists link image charmap print preview anchor',
-              'searchreplace visualblocks code fullscreen',
-              'insertdatetime media table contextmenu paste code'
-            ],
-            toolbar: 'insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image uploadimg',
-            content_css: [
-              '//fast.fonts.net/cssapi/e6dc9b99-64fe-4292-ad98-6974f93cd2a2.css',
-              '<?php echo base_url() ?>asset/css/codepen.min.css'
-            ],
-            relative_urls: false,
-            remove_script_host: false,
-            setup : function(ed) {
-              // Add a custom button
-              ed.addButton('uploadimg', {
-                  title : 'Upload image',
-                  image : '<?=base_url("asset/images/tipe/upload.png");?>',
-                  onclick : function() {
-                      // Add you own code to execute something on click
-                      // ed.focus();
-                      //ed.selection.setContent('Hello world!');
-                      notif('img');
-                  }
-              });
+          height: 1000,
+          plugins: [
+            'advlist autolink lists link image charmap print preview anchor',
+            'searchreplace visualblocks code fullscreen',
+            'insertdatetime media table contextmenu paste code'
+          ],
+          toolbar: 'insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image uploadimg',
+          content_css: [
+            '//fast.fonts.net/cssapi/e6dc9b99-64fe-4292-ad98-6974f93cd2a2.css',
+            '<?php echo base_url() ?>asset/css/codepen.min.css'
+          ],
+          relative_urls: false,
+          remove_script_host: false,
+          setup : function(ed) {
+            // Add a custom button
+            ed.addButton('uploadimg', {
+                title : 'Upload image',
+                image : '<?=base_url("asset/images/tipe/upload.png");?>',
+                onclick : function() {
+                    // Add you own code to execute something on click
+                    // ed.focus();
+                    //ed.selection.setContent('Hello world!');
+                    notif('img');
+                }
+            });
           }
-           });
+        });
 
 
 
