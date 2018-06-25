@@ -610,9 +610,9 @@ function insert_aktifitas($user, $keterangan){
 		
 	}
 	function autosave(){
-		$judul = trim($_POST['judul']);
+		$judul = trim(@$_POST['judul']);
 		if($judul!=""){
-			if($_POST['kode']==""){
+			if(@$_POST['kode']==""){
 				#jika kode masih kosong, generad kode
 				$data = array('status' => '2', 'type' => 'news', );
 				$this->db->insert('tb_post', $data);
