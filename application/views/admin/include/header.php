@@ -26,7 +26,7 @@
   <!-- redactor -->
   <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>asset/css/redactor.css">
   
-  <?php echo @$map['js']; ?>
+  <?php /** echo @$map['js']; */?>
 <script type="text/javascript">
             // DROPZONE
             Dropzone.options.formFile = {
