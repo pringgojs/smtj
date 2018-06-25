@@ -270,14 +270,7 @@
                 <!--/.lightbox-->
                 </div>
         </section>
-<script>
-
-function showF(divId) {
-    $("#"+divId).toggle();
-    $("#txtkategori").focus();
-  }
-
-       
+<script>   
 // <!-- MAPS GOOOGLE -->
 /**
   var marker, myCircle, map;
@@ -381,7 +374,7 @@ var posisiPageEdit = true;
 function showF(divId) {
     $("#"+divId).toggle();
     $("#txtkategori").focus();
-  }
+}
 function editLink(){
    editCustomLine = true;
    link = $("#link").val();
