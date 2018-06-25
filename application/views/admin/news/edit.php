@@ -424,8 +424,8 @@ var auto = setInterval(
           newslink: link_tmp,
           konten: kontent,
           kode: kode,
-          data: data,
           judul: judul,
+          data,
         },
         type: 'post',
         success:function(result){

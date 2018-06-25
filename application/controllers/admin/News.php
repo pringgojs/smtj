@@ -289,17 +289,17 @@ function insert_aktifitas($user, $keterangan){
 
 		$kode 		= $this->cekLogin();
 		$this->cek_hak_akses_user();
-		$judul 		= @$_GET['judul'];
-		$konten 	= @$_GET['konten'];
-		$id 		= @$_GET['kode'];
+		$judul 		= @$_POST['judul'];
+		$konten 	= @$_POST['konten'];
+		$id 		= @$_POST['kode'];
 		
-		$id_label 	= @$_GET['id_label'];
-		$tanggal 	= @$_GET['tanggal'];
-		$komentar 	= @$_GET['komentar'];
+		$id_label 	= @$_POST['id_label'];
+		$tanggal 	= @$_POST['tanggal'];
+		$komentar 	= @$_POST['komentar'];
 		$parent_link= base_url()."news/".$id;
-		$nama_link 	= strtolower(@$_GET['link']);
-		$lokasi 	= @$_GET['lokasi'];
-		$label 		= trim(@$_GET['label']);
+		$nama_link 	= strtolower(@$_POST['link']);
+		$lokasi 	= @$_POST['lokasi'];
+		$label 		= trim(@$_POST['label']);
 		$old 		= false;
 		$new 		= false;
 
@@ -379,8 +379,8 @@ function insert_aktifitas($user, $keterangan){
 		/* ===================
 		KATEGORI 
 		====================== */
-		if(@$_GET['kode_cek']!=""){
-			$kategori = implode("-", @$_GET['kode_cek']);
+		if(@$_POST['kode_cek']!=""){
+			$kategori = implode("-", @$_POST['kode_cek']);
 		}else{
 			$kategori = "0";
 		}
