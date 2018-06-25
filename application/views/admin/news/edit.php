@@ -278,7 +278,7 @@ function showF(divId) {
   }
 
        
-<!-- MAPS GOOOGLE -->
+// <!-- MAPS GOOOGLE -->
       
       var marker, myCircle, map;
       function initialized() {
