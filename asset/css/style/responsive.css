@@ -1,0 +1,97 @@
+@media screen and (max-width: 1024px) {
+	/* home */	
+	.navbar, .header {
+		width: 980px;
+	}
+	.main {
+		width: 990px;
+	}
+	.profile-main {
+		width: 590px;
+	}
+	.post {
+		width: 316px;
+		margin-right: 20px;
+		margin-bottom: 30px;
+	}
+	#article, #gallery-photo {
+		width: 1000px;
+	}
+	#product {
+		width: 470px;
+	}
+	#gallery {
+		width: 405px;
+	}
+	.more-info {
+		width: 990px;
+	}
+	.footer {
+		width: 980px;
+	}
+	.foot-contact {
+		width: 450px;
+	}
+	.foot-link {
+		width: 250px;
+	}
+	.footer-copy {
+		width: 980px;
+	}
+	.product-title {
+		width: 280px;
+	}
+	.product-description {
+		height: 95px;
+	}
+	/* sidebar */
+	.agenda-wrap {
+		width: 300px;
+	}
+	.agenda-date {
+		width: 80px;
+	}
+	.agenda-desc {
+		width: 210px;
+	}
+	.popular-desc {
+		width: 180px;
+	}
+	/* main */
+	.main-wrap {
+		width: 630px;
+	}
+	.main-post {
+		width: 580px;
+	}
+	.sidebar {
+		width: 300px;
+	}
+	.related .post {
+		width: 305px;
+	}
+	.main-wrap-right {
+		width: 630px;
+	}
+	.event-post {
+		width: 465px;
+	}
+	.event-date .mounth, .event-date .date {
+		width: 85px;
+	}
+	.button-view {
+		font-size: 11px;
+	}
+	.contact-left {
+		width: 270px;
+	}
+	.contact-right {
+		width: 580px;
+	}
+	.tujuhdua {
+		width: 564px;
+	}
+	.tigalima {
+		width: 275px;
+	}
+}

@@ -1,0 +1,51 @@
+#files_img
+CREATE VIEW files_img AS SELECT * FROM tb_file WHERE type IN('JPG','jpg','jpeg','PNG','png','GIF','gif','ico','ICO','bmp','BMP','NEF','nef','tif','TIF','RAW','raw')
+
+#files_video
+CREATE VIEW files_video AS SELECT * FROM tb_file WHERE type IN('webm','mkv','flv','vob','ogv','ogg','drc','avi','wmv','mp4','m4p','mpg','mpeg','m4v','3gp')
+
+#files_audio
+CREATE VIEW files_audio AS SELECT * FROM tb_file WHERE type IN ('mp3')
+
+#files_attachement
+CREATE VIEW files_attachement AS SELECT * FROM tb_file WHERE type NOT IN('webm','mkv','flv','vob','ogv','ogg','drc','avi','wmv','mp4','m4p','mpg','mpeg','m4v','3gp','JPG','jpg','jpeg','PNG','png','GIF','gif','ico','ICO','bmp','BMP','NEF','nef','tif','TIF','RAW','raw','mp3')
+
+
+
+#pages_view
+CREATE VIEW pages_view AS SELECT * FROM tb_post WHERE status in(1,2) AND type = "pages" 
+
+#page_parent_view
+CREATE VIEW page_parent_view AS SELECT * FROM tb_post WHERE type = "pages" AND parent = 0
+
+https://plus.google.com/u/0/photos/photo/106860427660038628008/6249691431562718386?sqid=117629634600177906054&ssid=3de837de-179b-4607-9560-9ec31d8315df
+
+#---------------------------------------------------------------------------------#
+#post_view
+CREATE VIEW post_view AS SELECT * FROM tb_post WHERE type = "news" ORDER by id_post DESC
+#trash_view
+CREATE VIEW post_trash_view AS SELECT * FROM tb_post WHERE type = "news" AND status="3" ORDER by id_post DESC
+#draf_view
+CREATE VIEW post_draf_view AS SELECT * FROM tb_post WHERE type = "news" AND status="2" ORDER by id_post DESC
+#pending_view
+CREATE VIEW post_pending_view AS SELECT * FROM tb_post WHERE type = "news" AND status="4" ORDER by id_post DESC
+
+#announcement_view
+CREATE VIEW announcement_view AS SELECT * FROM tb_post WHERE type = "announcement" ORDER by id_post DESC
+#trash_view
+CREATE VIEW announcement_trash_view AS SELECT * FROM tb_post WHERE type = "news" AND status="3" ORDER by id_post DESC
+#draf_view
+CREATE VIEW announcement_draf_view AS SELECT * FROM tb_post WHERE type = "news" AND status="2" ORDER by id_post DESC
+#pending_view
+CREATE VIEW announcement_pending_view AS SELECT * FROM tb_post WHERE type = "news" AND status="4" ORDER by id_post DESC
+
+
+
+----------------------------------------------------------------------------------
+UPDATE TAN
+- PERUBAHAN POST VIEW
+- PENAMBAHAN TABEL SETTING
+- PENAMBAHAN IKON MODULE
+- PENAMBAHAN CONTACT
+- ADANYA FITUR PENDING POST
+- TB USER UBAH BAWAAN HAK AKSES [1-2-3]
