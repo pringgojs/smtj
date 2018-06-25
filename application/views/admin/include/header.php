@@ -25,9 +25,6 @@
   
   <!-- redactor -->
   <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>asset/css/redactor.css">
-  <script type='text/javascript' charset='utf-8' src='<?php echo base_url() ?>asset/js/jquery.js'></script>
-  <script type='text/javascript' charset='utf-8' src='<?php echo base_url() ?>asset/js/redactor.js'></script>
-  <script type='text/javascript' charset='utf-8' src='<?php echo base_url() ?>asset/js/redactor.min.js'></script>
   
   <?php echo @$map['js']; ?>
 <script type="text/javascript">
