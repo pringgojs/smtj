@@ -293,7 +293,6 @@ function addkategori(){
 	
 }
 function saveDraf(key){
-	alert(key);
 	judul   = $("#judul").val();
    	judul   = judul.trim();
    	judul   = judul.replace(/\s/g, '-');
@@ -320,7 +319,11 @@ function saveDraf(key){
 		},
 		type: 'post',
 		success: function(result){
+			console.log(result);
 			window.location.href=homepage+"administrator/"+key;
+		}, 
+		error: function (params) {
+			console.log(params);
 		}
 	});
 }
