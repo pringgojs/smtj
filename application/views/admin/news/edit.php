@@ -425,7 +425,7 @@ var auto = setInterval(
           konten: kontent,
           kode: kode,
           data: data
-        }
+        },
         success:function(result){
           console.log(result);
           if (result != "0"){
