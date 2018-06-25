@@ -9,3 +9,4 @@ class Consultant extends CI_Controller {
 		show('front/include/footer');
 
 	}
+}

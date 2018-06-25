@@ -2129,9 +2129,9 @@ class Website extends CI_Controller {
   			$thumbImages = false;
   		}
   		if($thumbVideos ==  true && $thumbImages ==  true){
-  			$thumbnail = '<iframe width="400" height="300" src="https:'.$video.'" frameborder="0" allowfullscreen></iframe>';
+  			$thumbnail = '<iframe width="400" height="300" src="'.$video.'" frameborder="0" allowfullscreen></iframe>';
   		}else if($thumbVideos ==  true && $thumbImages ==  false){
-			$thumbnail = '<iframe width="400" height="300" src="https:'.$video.'" frameborder="0" allowfullscreen></iframe>';
+			$thumbnail = '<iframe width="400" height="300" src="'.$video.'" frameborder="0" allowfullscreen></iframe>';
   		}else if($thumbVideos ==  false && $thumbImages ==  true){
   			$thumbnail = $img;
   		}else if($thumbVideos ==  false && $thumbImages ==  false){
