@@ -226,17 +226,17 @@ class Announcement extends CI_Controller {
      function savetodraf(){
           $kode     = $this->cekLogin();
           $this->cek_hak_akses_user();
-          $judul    = @$_GET['judul'];
-          $konten   = @$_GET['konten'];
-          $id       = @$_GET['kode'];
+          $judul    = @$_POST['judul'];
+          $konten   = @$_POST['konten'];
+          $id       = @$_POST['kode'];
 
-          $linkImgFe= $_GET['urlfiturImages'];
-          $link     = $_GET['link'];
-          $parent   = $_GET['parent'];
+          $linkImgFe= $_POST['urlfiturImages'];
+          $link     = $_POST['link'];
+          $parent   = $_POST['parent'];
 
-          $alt      = @$_GET['alt'];
-          $deskripsi= @$_GET['deskripsi'];
-          $autosave = $_GET['autosave']; #cek dari mana save drave/ edit apa autosave
+          $alt      = @$_POST['alt'];
+          $deskripsi= @$_POST['deskripsi'];
+          $autosave = $_POST['autosave']; #cek dari mana save drave/ edit apa autosave
           if($parent == ""){
             $parent = "0";
           }
@@ -430,9 +430,9 @@ class Announcement extends CI_Controller {
           $this->viewKategori(); // return list kategori
      }
      function autosave(){
-          $judul = trim(@$_GET['judul']);
+          $judul = trim(@$_POST['judul']);
           if($judul!=""){
-               if(@$_GET['kode']==""){
+               if(@$_POST['kode']==""){
                     #jika kode masih kosong, generad kode
                     $data = array('status' => '2', 'type' => 'pages', );
                     $this->db->insert('tb_post', $data);

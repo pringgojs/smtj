@@ -309,7 +309,15 @@ function saveDraf(key){
 	}
 	
 	$.ajax({
-		url:homepage+"administrator/"+key+"/savetodraf/?autosave=edit&newslink="+newslink+"&konten="+kontent+"&kode="+kode+"&"+data,
+		url:homepage+"administrator/"+key+"/savetodraf",
+		data: {
+			newslink: link_tmp,
+			konten: kontent,
+			kode: kode,
+			judul: judul,
+			data,
+		},
+		type: 'post',
 		success: function(result){
 			window.location.href=homepage+"administrator/"+key;
 		}

@@ -255,7 +255,16 @@ function batalLink(){
        $("#savetoDraf").val("Saving data ...");
        $(".loader").fadeIn();
        $.ajax({
-        url:homepage+"administrator/pages/autosave/?autosave=autosave&newslink="+newslink+"&konten="+kontent+"&kode="+kode+"&"+data,
+        url:homepage+"administrator/pages/autosave",
+        data:{
+          autosave: 'autosave',
+          newslink: link_tmp,
+          konten: kontent,
+          kode: kode,
+          judul: judul,
+          data,
+        },
+        type: 'post',
         success:function(result){
           if(result != "0"){
              var hasil = result.split("|");
