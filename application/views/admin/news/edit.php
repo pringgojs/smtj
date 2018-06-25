@@ -384,14 +384,14 @@ function showF(divId) {
   }
 function editLink(){
    editCustomLine = true;
-   link = $("#link").val();
+   var link = $("#link").val();
 
    $("#load_link").html("");
    $("#load_link").html("<b>Permalink : </b> <?=$link;?>/<input type='text' id='link_custom' value='"+link+"'/> <span class='btn btn-xs btn-bg btn-default' onclick=\"okLink()\">Ok</span> / <a onclick=\"batalLink()\"><small>Cancel</span></a>");
    $("#link_custom").focus();
 }
 function okLink(){
-   link_custom   = $("#link_custom").val();
+   var link_custom   = $("#link_custom").val();
    link_custom   = link_custom.trim();
    link_custom   = link_custom.replace(/\s/g, '-').toLowerCase();
    $("#link").val(link_custom);
@@ -400,12 +400,12 @@ function okLink(){
 }
 function batalLink(){
   //editCustomLine = false;
-   judul   = $("#judul").val();
+   var judul   = $("#judul").val();
    judul   = judul.trim(); 
    judul   = judul.replace(/\s/g, '-').toLowerCase();
-   link    = $("#link").val(judul);
+   var link    = $("#link").val(judul);
 
-   link_tmp   = $("#link_tmp").val();
+   var link_tmp   = $("#link_tmp").val();
    $("#load_link").html("");
    $("#load_link").html("<b>Permalink : </b> <?=$link;?>"+link_tmp+" <span class='btn btn-xs btn-bg btn-default' onclick=\"editLink()\">edit</span>");
 
@@ -413,16 +413,15 @@ function batalLink(){
     // generad LINK AUTO
 var auto = setInterval(
     function(){
-      link_tmp   = $("#link_tmp").val();
-      judul   = $("#judul").val();
+      var link_tmp   = $("#link_tmp").val();
+      var judul   = $("#judul").val();
       judul   = judul.trim();
       judul   = judul.replace(/\s/g, '-').toLowerCase();
-      kontent = tinyMCE.get('berita').getContent()
-      kode    = $("#kode").val();
-      data    = $("#simpanberita").serialize();
+      var kontent = tinyMCE.get('berita').getContent()
+      var kode    = $("#kode").val();
+      var data    = $("#simpanberita").serialize();
 
-      newslink   = judul;
-      link_tmp   = $("#link_tmp").val();
+      var newslink   = judul;
       $("#savetoDraf").val("Saving data ...");
       $(".loader").fadeIn();
       $.ajax({
