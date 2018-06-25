@@ -19,11 +19,8 @@
   <link rel="stylesheet" href="<?php echo base_url() ?>asset/css/dropzone.css" type="text/css" />  
   <link rel="stylesheet" href="<?php echo base_url() ?>asset/js/calendar/bootstrap_calendar.css" type="text/css" />
   <link rel="stylesheet" href="<?php echo base_url() ?>asset/js/nestable/nestable.css" type="text/css" />
-  <!-- <script src="<?php /** echo base_url() */ ?>asset/js/jquery.min.js"></script> -->
-  <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+  <script src="<?php echo base_url() ?>asset/js/jquery.min.js"></script>
+  
   <script src="<?php echo base_url() ?>asset/js/dropzoneDE.js"></script> 
   
   <script src="<?php echo base_url() ?>asset/js/gridGalery/modernizr.custom.js"></script>
