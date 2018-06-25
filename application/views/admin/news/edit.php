@@ -439,16 +439,6 @@ var auto = setInterval(
               }else{
                 $(".loader").fadeOut();
                 $("#savetoDraf").val("Save to Draf");
-                // if(posisiPageEdit == true){
-                //   // link di ambil dari database
-                //   $("#link").val(link_tmp);
-                //   $("#load_link").html("");
-                //   $("#load_link").html("<b>Permalink : </b>  <?=$link;?>"+ link_tmp+" <span class='btn btn-xs btn-bg btn-default' onclick=\"editLink()\">edit</span>");
-                // }else{
-                //   $("#link").val(newslink);
-                //   $("#load_link").html("");
-                //   $("#load_link").html("<b>Permalink : </b>  <?=$link;?>"+ newslink+" <span class='btn btn-xs btn-bg btn-default' onclick=\"editLink()\">edit</span>");
-                // }
                 if(editCustomLine == false){
                   $("#link").val(link_tmp);
                   $("#load_link").html("");
@@ -465,7 +455,7 @@ var auto = setInterval(
      
   
     },
-    20000
+    10000
 );
 
 </script>
