@@ -425,7 +425,14 @@ var auto = setInterval(
       $("#savetoDraf").val("Saving data ...");
       $(".loader").fadeIn();
       $.ajax({
-        url:homepage+"administrator/news/autosave/?newslink="+link_tmp+"&konten="+kontent+"&kode="+kode+"&"+data,
+        // url:homepage+"administrator/news/autosave/?newslink="+link_tmp+"&konten="+kontent+"&kode="+kode+"&"+data,
+        url:homepage+"administrator/news/autosave",
+        data:{
+          newslink: link_tmp,
+          konten: kontent,
+          kode: kode,
+          data: data
+        }
         success:function(result){
           console.log(result);
           if (result != "0"){
