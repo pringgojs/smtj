@@ -1,4 +1,4 @@
-<body  onload="initialized()">
+<body >
   <section class="vbox">
     <header class="bg-white header header-md navbar navbar-fixed-top-xs box-shadow">
       <div class="navbar-header aside-md dk">
