@@ -482,7 +482,7 @@ function insert_aktifitas($user, $keterangan){
     		$this->db->where('id_post', $kode); 
     		$this->db->delete('tb_corner'); 
     	}
-	$user 	= $this->cekLogin();
+		$user 	= $this->cekLogin();
     	$this->insert_aktifitas($user, "Menghapus berita ");
     	redirect('administrator/news');
 	}
@@ -610,9 +610,9 @@ function insert_aktifitas($user, $keterangan){
 		
 	}
 	function autosave(){
-		$judul = trim(@$_GET['judul']);
+		$judul = trim($_POST['judul']);
 		if($judul!=""){
-			if(@$_GET['kode']==""){
+			if($_POST['kode']==""){
 				#jika kode masih kosong, generad kode
 				$data = array('status' => '2', 'type' => 'news', );
 				$this->db->insert('tb_post', $data);

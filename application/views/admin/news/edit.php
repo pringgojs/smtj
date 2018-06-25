@@ -426,6 +426,7 @@ var auto = setInterval(
           kode: kode,
           data: data
         },
+        type: 'post',
         success:function(result){
           console.log(result);
           if (result != "0"){
@@ -455,7 +456,7 @@ var auto = setInterval(
      
   
     },
-    10000
+    20000
 );
 
 </script>
