@@ -1,6 +1,5 @@
 
 <script src="<?php echo base_url() ?>asset/js/service.js"></script>
-<script src="<?php echo base_url() ?>asset/js/jquery.min.js"></script>
 <script src="<?php echo base_url() ?>asset/js/jquery.easing.1.3.js"></script>
 <!-- Bootstrap -->
 <script src="<?php echo base_url() ?>asset/js/bootstrap.js"></script>
