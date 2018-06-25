@@ -384,7 +384,7 @@ function showF(divId) {
   }
 function editLink(){
    editCustomLine = true;
-   var link = $("#link").val();
+   link = $("#link").val();
 
    $("#load_link").html("");
    $("#load_link").html("<b>Permalink : </b> <?=$link;?>/<input type='text' id='link_custom' value='"+link+"'/> <span class='btn btn-xs btn-bg btn-default' onclick=\"okLink()\">Ok</span> / <a onclick=\"batalLink()\"><small>Cancel</span></a>");
