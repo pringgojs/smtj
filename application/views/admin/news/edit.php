@@ -414,24 +414,25 @@ function batalLink(){
 
 }
     // generad LINK AUTO
-    var auto = setInterval(
-      function(){
-        link_tmp   = $("#link_tmp").val();
-       judul   = $("#judul").val();
-       judul   = judul.trim();
-       judul   = judul.replace(/\s/g, '-').toLowerCase();
-       kontent = tinyMCE.get('berita').getContent()
-       kode    = $("#kode").val();
-       data    = $("#simpanberita").serialize();
+var auto = setInterval(
+    function(){
+      link_tmp   = $("#link_tmp").val();
+      judul   = $("#judul").val();
+      judul   = judul.trim();
+      judul   = judul.replace(/\s/g, '-').toLowerCase();
+      kontent = tinyMCE.get('berita').getContent()
+      kode    = $("#kode").val();
+      data    = $("#simpanberita").serialize();
 
-       newslink   = judul;
-       link_tmp   = $("#link_tmp").val();
-       $("#savetoDraf").val("Saving data ...");
-       $(".loader").fadeIn();
-       $.ajax({
+      newslink   = judul;
+      link_tmp   = $("#link_tmp").val();
+      $("#savetoDraf").val("Saving data ...");
+      $(".loader").fadeIn();
+      $.ajax({
         url:homepage+"administrator/news/autosave/?newslink="+link_tmp+"&konten="+kontent+"&kode="+kode+"&"+data,
         success:function(result){
-          if(result != "0"){
+          console.log(result);
+          if (result != "0"){
              var hasil = result.split("|");
               kunci     = hasil[0];
               if(kunci  =="ID"){
@@ -467,7 +468,8 @@ function batalLink(){
        });
      
   
-      },20000);
+    },
+    20000
+);
 
-
-    </script>
+</script>
