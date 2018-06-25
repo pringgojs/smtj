@@ -293,6 +293,7 @@ function addkategori(){
 	
 }
 function saveDraf(key){
+	alert(key);
 	judul   = $("#judul").val();
    	judul   = judul.trim();
    	judul   = judul.replace(/\s/g, '-');
