@@ -142,7 +142,7 @@
                                     </div>
                                     <div class="m-t-lg">
                                       <input type="submit" name="simpanberita" id="simpanberita" class="btn btn-sm btn-primary" Value="Publish News"/>
-                                      <input type="button" onclick = "saveDraf()" id="savetoDraf" class="btn btn-sm btn-default" Value="Save to Draf"/>
+                                      <input type="button" onclick="saveDraf('news')" id="savetoDraf" class="btn btn-sm btn-default" Value="Save to Draf"/>
                                     </div>
                                  
                                 </div>
