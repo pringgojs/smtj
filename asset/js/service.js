@@ -30,6 +30,7 @@ function hapus_file(id){
 	$.ajax({
 		url: homepage+"administrator/files/delete/"+id,
 		success: function(status){
+			console.log(status);
 			if(status == 1){
 				// sukses
 				$("#data-"+id).fadeOut(0);

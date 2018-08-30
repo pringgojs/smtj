@@ -182,14 +182,20 @@ class Files extends CI_Controller {
 			return "";
 		//return "";
 	}
-	function delete($kode = ""){
+	function delete($kode=""){
 		$this->cek_hak_akses_user();
 		$query	= $this->db->get_where('tb_file',array('id_file'=>$kode)); 
 		$datafile = $query->row();
 	  	$url = $datafile->link;
 	  	
 	  	if($url!=""){
-	  		unlink(FCPATH . $url);
+			try {
+				unlink(FCPATH . $url);
+			} catch (Exception $e) {
+				$this->db->where('id_file', $kode); 
+				$this->db->delete('tb_file'); 
+			}
+
       		$this->db->where('id_file', $kode); 
     		$this->db->delete('tb_file'); 
 		$user 	= $this->cekLogin();

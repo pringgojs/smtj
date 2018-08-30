@@ -66,7 +66,7 @@
                                 <td>$ukuran $iqui</td>
                                 <td>$tgl</td>
                                 <td>$link</td>
-                                <td align=center><a href='#' onclick = hapus('$id')><i class='fa fa-times text-danger text'></i></a></td>
+                                <td align=center><a href='#' onclick=hapus_file('$id')><i class='fa fa-times text-danger text'></i></a></td>
                               </TR>
                               ";
                             }
