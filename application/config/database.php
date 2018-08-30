@@ -64,10 +64,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => '180.250.182.5',
+	'hostname' => 'localhost',
 	'username' => 'root',
-	'password' => 'adminjaringan',
-	'database' => 'db_web_smk',
+	'password' => '',
+	'database' => 'db_consultan',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

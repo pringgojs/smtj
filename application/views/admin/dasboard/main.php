@@ -341,16 +341,13 @@
             </section>
             <script src="<?php echo base_url() ?>asset/js/jquery.min.js"></script>
 <script type="text/javascript">
-<script>
 (function(w,d,s,g,js,fjs){
   g=w.gapi||(w.gapi={});g.analytics={q:[],ready:function(cb){this.q.push(cb)}};
   js=d.createElement(s);fjs=d.getElementsByTagName(s)[0];
   js.src='https://apis.google.com/js/platform.js';
   fjs.parentNode.insertBefore(js,fjs);js.onload=function(){g.load('analytics')};
 }(window,document,'script'));
-</script>
 
-<script>
 gapi.analytics.ready(function() {
 
   // Step 3: Authorize the user.
@@ -399,5 +396,4 @@ gapi.analytics.ready(function() {
     timeline.set(newIds).execute();
   });
 });
-</script>
 </script>

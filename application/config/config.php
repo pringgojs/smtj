@@ -17,7 +17,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | environments.
 |
 */
-$config['base_url'] = 'http://www.smkn1jenpo.sch.id/';
+$config['base_url'] = 'http://localhost/smtj/';
 //$config['base_url'] = 'http://180.250.182.6/';
 /*
 |--------------------------------------------------------------------------

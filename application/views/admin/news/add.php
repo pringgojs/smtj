@@ -297,7 +297,7 @@ function batalLink(){
         url:homepage+"administrator/news/autosave",
         data:{
           autosave: 'autosave',
-          newslink: link_tmp,
+          newslink: newslink,
           konten: kontent,
           kode: kode,
           judul: judul,
@@ -328,7 +328,6 @@ function batalLink(){
             $("#savetoDraf").val("Save to Draf");
           }
         }
-
        });
      
   
