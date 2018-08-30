@@ -647,6 +647,7 @@ class Website extends CI_Controller {
 	function cek_kategori($kode=""){
 		$where = array('id_kategori' => $kode );
 		$kategori = $this->db->get_where('tb_kategori',$where)->row();
+		if (!$kategori) return "Tidak berkategori";
 		return 	$kategori->nama;
 	}
 	function cari($cari){

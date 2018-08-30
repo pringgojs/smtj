@@ -258,7 +258,7 @@ function batalLink(){
         url:homepage+"administrator/pages/autosave",
         data:{
           autosave: 'autosave',
-          newslink: link_tmp,
+          newslink: newslink,
           konten: kontent,
           kode: kode,
           judul: judul,

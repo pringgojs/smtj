@@ -116,8 +116,9 @@ function insert_aktifitas($user, $keterangan){
 		$config['center'] = '37.4419, -122.1419';
 		$config['zoom'] = 'auto';
 
-		$this->googlemaps->initialize($config);
-		$data['map'] = $this->googlemaps->create_map();
+		// $this->googlemaps->initialize($config);
+		// $data['map'] = $this->googlemaps->create_map();
+		$data['map'] = '';
 		# end maps
 
 		$t = $this->cekLogin(); // get kode login
@@ -136,8 +137,8 @@ function insert_aktifitas($user, $keterangan){
 		$config['center'] = '37.4419, -122.1419';
 		$config['zoom'] = 'auto';
 
-		$this->googlemaps->initialize($config);
-		$data['map'] = $this->googlemaps->create_map();
+		// $this->googlemaps->initialize($config);
+		$data['map'] = '';
 		# end maps
 		$kode 	= $this->uri->segment(4);
 		$t = $this->cekLogin(); // get kode login
