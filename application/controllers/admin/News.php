@@ -5,7 +5,7 @@ class News extends CI_Controller {
 	    $this->load->model('modelnews'); 
      	$this->load->model('modellogin'); 
      	$this->load->library('pagination'); 
-     	$this->load->library('Googlemaps');
+     	// $this->load->library('Googlemaps');
      	$this->method_call =& get_instance(); // untuk memanggil method dari view
      	global $kode;
     }
