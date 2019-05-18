@@ -1,5 +1,5 @@
 // var homepage = "http://www.smkn1jenpo.sch.id/";
-var homepage = "http://localhost/smtj/";
+var homepage = "http://www.smkn1jenpo.sch.id/";
 var customLink = false;
 
 function editkategori(id){
